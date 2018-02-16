@@ -66,6 +66,8 @@ main
 	Printf("Taper le nombre de résistances:")
 	scanf("%d",&n);
 	float R[n];
+	for(int i=0;i<n;i++)
+	scanf("%f",R[i]);
 //q4-b	
 printf("La valeur de la résistance Equivalente est : %.2f",equival(R,n));
 //q4-c
