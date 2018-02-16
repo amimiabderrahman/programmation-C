@@ -1,0 +1,125 @@
+//Partie I:
+// q1
+float equival(float r1, float r2)
+{
+	float rt=(r1*r2)/(r1+r2);
+	return rt;
+}
+//q2
+float tension(float i, float rt)
+{
+	float v=rt*i;
+	return v;
+}
+//q3
+void puissance(float i, float rt)
+{
+	float p=i*i/rt;
+printf("la puissance est %.2f",p);
+}
+//q4
+float R1,R2,I;
+main()
+{
+	//a
+printf("Taper la valeur de R1 :")
+scanf("%f",&R1)	
+printf("Taper la valeur de R1 :")
+scanf("%f",&R2)	
+printf("La valeur de la résistance Equivalente est : %.2f",equival(R1,R2));
+//b
+printf("Taper la valeur de I :")
+scanf("%f",&I)	
+printf("La valeur de la tension est  :%.2f",tenstion(I,equival(R1,R2)));
+//c
+puissance(I,equival(R1,R2));
+	
+}
+
+//Partie II:
+// q1
+
+float equival(float R[],int n)
+{
+	float s=0;
+	for(int i=0;i<n;i++)
+	s+=1/R[i];
+	float RT=1/S;
+	retrun RT;
+}
+//Q2
+float tension(float i, float rt)
+{
+	float v=rt*i;
+	return v;
+}
+//Q3
+void puissance(float i, float rt)
+{
+	float p=i*i/rt;
+printf("la puissance est %.2f",p);
+}
+//q4-a
+int n;
+main
+{
+	Printf("Taper le nombre de résistances:")
+	scanf("%d",&n);
+	float R[n];
+//q4-b	
+printf("La valeur de la résistance Equivalente est : %.2f",equival(R,n));
+//q4-c
+printf("Taper la valeur de I :")
+scanf("%f",&I)	
+printf("La valeur de la tension est  :%.2f",tenstion(I,equival(R,n));
+//q4-d
+puissance(I,equival(R,n));
+
+}
+//Partie III:
+// q1
+struct bloc
+{
+	float r1,r2;
+}b1,b2;
+// q2
+float equival(bloc b1, bloc b2)
+{
+	float rt=equival(b1.r1,b1.r2)+equival(b2.r1,b2.r2);
+	return rt;
+}
+// q3
+float tension(float i, float rt)
+{
+	float v=rt*i;
+	return v;
+}
+//q4
+void puissance(float i, float rt)
+{
+	float p=i*i/rt;
+printf("la puissance est %.2f",p);
+}
+//q5
+float r1,r2,r3,r4,I;
+main()
+{
+	//5-a
+	printf("Taper la résitance r1 de b1 :")
+	scanf("%d",b1.r1);
+		printf("Taper la résitance r1 de b1 :")
+	scanf("%d",b1.r2);
+		printf("Taper la résitance r1 de b1 :")
+	scanf("%d",b2.r1);
+		printf("Taper la résitance r1 de b1 :")
+	scanf("%d",b2.r2);
+//5-b
+printf("La valeur de la résistance Equivalente est : %.2f",equival(b1,b2));
+//5-c
+printf("Taper la valeur de I :")
+scanf("%f",&I)	
+printf("La valeur de la tension est  :%.2f",tenstion(I,equival(b1,b2));
+//5-d
+puissance(I,equival(b1,b2));	
+}
+
